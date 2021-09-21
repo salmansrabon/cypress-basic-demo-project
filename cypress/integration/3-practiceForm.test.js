@@ -18,6 +18,7 @@ describe('Fillup web form', () => {
         cy.get("#state").type("NCR");
         cy.get("#state").type('{downarrow}');
         cy.get("#state").type('{enter}');
+        cy.get('#close-fixedban > img').click();
         cy.get("#closeLargeModal").click();
 
     })
