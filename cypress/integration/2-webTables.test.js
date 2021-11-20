@@ -1,4 +1,4 @@
-describe('Element coverage', () => {
+describe('Web table', () => {
     it('Click segment', () => {
         cy.visit('https://demoqa.com/')
         cy.title().should('eq', 'ToolsQA')

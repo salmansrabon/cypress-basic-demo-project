@@ -7,7 +7,7 @@ describe('Fillup web form', () => {
         cy.url().should('include', '/automation-practice-form')
         cy.get("#firstName").type("Test");
         cy.get("#lastName").type("User");
-        let email="test"+getRandomNumber(10000,99999)+"@grr.la";
+        let email = "test" + getRandomNumber(10000, 99999) + "@grr.la";
         cy.get("#userEmail").type(email);
         cy.xpath("//label[contains(text(),'Male')]").click();
         cy.get("#userNumber").type("1502020110");
@@ -23,5 +23,5 @@ describe('Fillup web form', () => {
     })
 })
 function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-  }
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
